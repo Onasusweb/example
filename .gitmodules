@@ -1,0 +1,3 @@
+[submodule "app/Plugin/Coderity"]
+	path = app/Plugin/Coderity
+	url = git@github.com:coderity/Coderity.git
