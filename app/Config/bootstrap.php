@@ -22,8 +22,6 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-CakePlugin::load(array('Coderity' => array('routes' => true, 'core' => true)));
-
 // Setup a 'default' cache configuration for use in the application.
 Cache::config('default', array('engine' => 'File'));
 
@@ -110,3 +108,15 @@ CakeLog::config('error', array(
 ));
 
 CakePlugin::load(array('Coderity' => array('routes' => true, 'bootstrap' => true)));
+
+Configure::write('Coderity', array(
+      'routes' => array(
+                  'autoRouting' => true,
+                  'autoRoutingIgnoreRoutes' => 'add|view|display|delete|admin|users|leads|blog|domains'
+               ),
+      'blocks' => true,
+      'articles' => true,
+      'leads' => true,
+      'redirects' => true,
+      'additionalAdminMenu' => array()
+   ));

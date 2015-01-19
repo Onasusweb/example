@@ -47,7 +47,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <?php echo $this->Html->image('coderity3small.png', array('class' => 'floatLeft', 'url' => array('controller' => 'pages', 'action' => 'display', 'home'))); ?>
                 <ul class="nav navbar-nav">
-                    <?php echo $this->element('Coderity.menu'); ?>
+                    <?php echo $this->element('Coderity.menu', array('ul' => array('class' => 'nav navbar-nav'))); ?>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

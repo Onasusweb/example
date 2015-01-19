@@ -26,7 +26,6 @@ h6 {
 }
 
 p {
-    font-size: 1.25em;
     line-height: 1.6;
     color: #000;
 }
@@ -170,7 +169,7 @@ footer p {
     }
 
     .nav>li>a {
-        padding: 15px;
+        padding: 12px;
     }
 
     .navbar-nav>li>a {
@@ -185,9 +184,9 @@ footer p {
         float: right;
         margin: 0 auto;
         table-layout: fixed;
-        font-size: 1.25em;
+        font-size: 1.15em;
         text-align: bottom;
-        margin-top: 25px;
+        margin-top: 20px;
     }
 }
 
