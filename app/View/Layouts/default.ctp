@@ -27,6 +27,13 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <?php
+        $analytics = $this->requestAction(array('controller' => 'settings', 'action' => 'get', 'google_analytics'));
+        if ($analytics) {
+            echo $analytics;
+        }
+    ?>
+
 </head>
 
 <body>
